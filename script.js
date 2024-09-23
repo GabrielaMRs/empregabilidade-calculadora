@@ -6,3 +6,17 @@ function calcular(expressao) {
       console.log('Erro: Expressão inválida');
   }
 }
+
+let expressaoAtual = '';
+
+function solicitarInput() {
+    expressaoAtual = prompt('Digite a expressão:');
+    calcular(expressaoAtual);
+}
+
+function clear() {
+    expressaoAtual = '';
+    console.log('Expressão limpa');
+}
+
+solicitarInput();
