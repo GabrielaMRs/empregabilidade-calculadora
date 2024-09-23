@@ -19,4 +19,13 @@ function clear() {
     console.log('Expressão limpa');
 }
 
-solicitarInput();
+function iniciarCalculadora() {
+  let continuar = true;
+  while (continuar) {
+      solicitarInput();
+      continuar = confirm('Deseja calcular outra expressão?');
+      clear();
+  }
+}
+
+iniciarCalculadora();
